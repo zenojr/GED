@@ -9,6 +9,7 @@
   "author": "Zeno França Júnior",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^2.5.5"
+    "ejs": "^2.5.5",
+    "mysql": "^2.13.0"
   }
 }
