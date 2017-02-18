@@ -11,7 +11,9 @@ module.exports = function(){ //padrão nodejs para exportar modulos dentro do ec
 	app.set('view engine','ejs');
 	app.set('views','./app/views');
 	
-	load('routes').intro(app);//invocando objeto load
+	load('routes', {cwd:'app'}) //cwd é um json q restringe a busca na pasta app pra melhorar o desempenho
+		.then('infra')
+		.into(app);//invocando objeto load
 
 
 	return app;

@@ -1,4 +1,4 @@
-var connectionFactory = require('../infra/connectionFactory');
+//var connectionFactory = require('../infra/connectionFactory'); - removido devido ao uso do express load
 module.exports = function(app){
 	app.get('/produtos',function(req,res){
 		var connection = connectionFactory();
