@@ -1,4 +1,9 @@
-var app = require('express')();
+var app = require('express');
+var load = require('express-load');
+
+var app =  express();
+var app_load = load();
+
 app.set('view engine','ejs');
 app.set('views','./app/views');
 console.log('Express Module Running!');
